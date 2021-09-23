@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="LOGO2.PNG" width="250px" >
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Facilities</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+   <video class="video-slide active" src="4.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="5.mp4" autoplay muted loop></video>
+
+
+
+
+
+  <div class = "content active">
+    <h1>Workshops.<br><span>Cyberpunk survival</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <img data-tilt  class = "image" src = "image.png" >
+    <a href= "#">Read More </a>
+
+  </div>
+  <div class = "content">
+    <h1>Services.<br><span>Rapid Prototyping</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href= "#">Read More </a>
+  </div>
+  <div class = "content">
+    <h1>Facilities.<br><span>Use Our Tools</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href= "#">Read More </a>
+  </div>
+  <div class = "content">
+    <h1>Learn.<br><span>Electronics 101</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href= "#">Read More </a>
+  </div>
+  <div class = "content">
+    <h1>Support.<br><span>Become a part of our community</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href= "#">Read More </a>
+  </div>
+  <div class = "media-icons">
+    <a href = "#"> <i class = "fab fa-discord"></i> </a>
+    <a href = "#"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "#"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "#"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+  <div class = "slider-navigation">
+    <div class = "nav-btn active"></div>
+    <div class = "nav-btn"></div>
+    <div class = "nav-btn"></div>
+    <div class = "nav-btn"></div>
+    <div class = "nav-btn"></div>
+  </div>
+</section>
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+
+</body>
+</html>
