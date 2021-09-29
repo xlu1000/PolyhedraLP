@@ -8,7 +8,7 @@
 }
 
 header{
-  z-index: 999;
+  z-index: 4;
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ section {
 }
 
 .home .image {
-  z-index: 666;
+  z-index: 2;
   position: absolute;
   flex-direction: column;
   display: flex;
@@ -87,6 +87,7 @@ section {
   width: 70%;
   margin-top: 50px;
   display: none;
+
 }
 .home .content.active {
   display: block;
@@ -112,6 +113,7 @@ section {
 
 .home .content p{
   margin-bottom: 65px;
+
 }
 
 .home .content a{
@@ -159,7 +161,7 @@ section {
 
 
 .slider-navigation{
-  z-index: 888;
+  z-index: 777;
   position: relative;
   display: flex;
   justify-content: center;
@@ -200,6 +202,61 @@ section {
   transition: 2s ease;
   transition-property: clip-path;
 }
+.news-container {
+  position:absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 8px -4px rgba(0,0,0,0.3);
+}
+.news-container .title {
+  position: absolute;
+  background: #000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  color: white;
+  z-index: 200;
+}
+.news-container ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  animation: scroll 25s infinite linear;
+}
+.news-container ul li {
+  white-space: nowrap;
+  padding: 10px 24px;
+  color: #000;
+  position: relative;
+}
+.news-container ul li::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.news-container ul li:last-child::after {
+  display: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-1198px);
+  }
+}
+
+
+
+
 
 
 
@@ -213,6 +270,9 @@ section {
   }
   .home .media-icons{
     right: 15px;
+  }
+  .home .content .image {
+    display: none;
   }
   header .navigation {
     display: none;
@@ -228,12 +288,14 @@ section {
     justify-content: center;
     align-items: center;
     background: rgba(1,1,1,0.5);
+
   }
 
   header .navigation .navigation-items a {
     color: #222;
     font-size: 1.2em;
     margin: 20px;
+    z-index: 999;
   }
 
   header .navigation .navigation-items a:before{
@@ -254,6 +316,7 @@ section {
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 5px 25px rgb(1 1 1 /20%);
+    z-index: 999;
   }
 
   .menu-btn{
@@ -264,6 +327,7 @@ section {
     height: 40px;
     cursor: pointer;
     transition: 0.3s ease;
+
   }
 
   .menu-btn.active {
@@ -275,6 +339,21 @@ section {
 
   }
 
+  .loader{
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    width:100%;
+  }
 
 
+
+}
+.home .content p  {
+  color: #000;
+}
+#white {
+  color: #FFFFFF;
 }
