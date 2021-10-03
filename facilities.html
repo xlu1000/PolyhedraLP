@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "styleFacilities.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#">Facilities</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="index.php">About</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+
+
+
+
+
+
+  <div class = "content active">
+    <h1>Facilities.</h1>
+    <p>Most of our prototyping is done in-house, including machining, cutting,
+      engraving, 3D printing, etc.
+      Our <a href= "https://www.fablabs.io/labs/polyhedra">facilities</a>
+       are registered as a fab lab in the global <a href="https://www.fablabs.io/">fab lab register</a> maintained by
+       <a href = "https://fabfoundation.org/">Fab Foundation</a> and are open to public during regular working hours.
+
+
+
+Since 2017, Polyhedra fab lab introduced
+<span style = "font-weight:bolder">memberships</span> which come with many
+benefits, including a <span style = "font-weight:bolder">50%</span> subsidized
+pricing on specific equipment and available materials covered by Polyhedra
+and its partners and 24×7 access.
+Membership costs symbolic 100 RSD/month and is paid annually for the remaining
+amount of months within the given year.</p>
+<p>
+  Pricing Schedule:
+  <br>
+  <br>
+
+Equipment:
+FDM 3D Printers: 240 RSD/hr
+Paste Extruder 3D Printers: 600 RSD/hr
+SLA/DLP 3D Printers: 600 RSD/hr
+CNC engravers: 600 RSD/hr
+CNC mills: 1200 RSD/hr
+Laser Engraver: 600 RSD/hr
+Laser Cutters: 1200 RSD/hr
+Vinyl Cutter: 240 RSD/hr
+
+Materials:
+Colorfabb PLA Regular: 30 RSD/g
+Colorfabb PLA Special: 60 RSD/g
+For a complete list of available materials , contact us at info@polyhedra.co.
+
+Labor:
+Assistance: 1200 RSD/hr
+</p>
+  </div>
+
+  <div class = "media-icons">
+    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+
+</body>
+</html>
