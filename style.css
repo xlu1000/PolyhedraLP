@@ -8,7 +8,7 @@
 }
 
 header{
-  z-index: 4;
+  z-index: 999;
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ section {
 }
 
 .home .image {
-  z-index: 2;
+  z-index: 666;
   position: absolute;
   flex-direction: column;
   display: flex;
@@ -161,7 +161,7 @@ section {
 
 
 .slider-navigation{
-  z-index: 777;
+  z-index: 888;
   position: relative;
   display: flex;
   justify-content: center;
@@ -203,7 +203,7 @@ section {
   transition-property: clip-path;
 }
 .news-container {
-  position:absolute;
+  position:fixed;
   top: 60px;
   left: 0;
   right: 0;
@@ -295,7 +295,7 @@ section {
     color: #222;
     font-size: 1.2em;
     margin: 20px;
-    z-index: 999;
+
   }
 
   header .navigation .navigation-items a:before{
@@ -316,7 +316,7 @@ section {
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 5px 25px rgb(1 1 1 /20%);
-    z-index: 999;
+
   }
 
   .menu-btn{
@@ -339,14 +339,7 @@ section {
 
   }
 
-  .loader{
-    z-index: 999;
-    top: 0;
-    left: 0;
-    background: #fff;
-    height: 100%;
-    width:100%;
-  }
+
 
 
 
