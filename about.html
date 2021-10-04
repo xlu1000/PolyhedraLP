@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "styleServices.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="index.php">About</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+
+
+
+
+
+
+  <div class = "content active">
+    <h1>About.</h1>
+    <p>We truly believe in the power of innovation. But, we also believe that a great idea will just stay an idea without a strong team with skills and experience to bring it to the market in the right way. As we faced this challenge ourselves, we’ve built a special task force specialized in every aspect of the product life cycle. A multi-functional team with the right mixture of skills, experience, creativity, precision, love and passion to turn any idea into a success story.</p>
+  </div>
+    <h1>Contact us.</h1>
+  <br>
+  <form action="https://formsubmit.co/lukanikolic42@gmail.com" method="POST">
+     <input type="hidden" name="_subject" value="New submission!">
+     <input type="text" name="name" placeholder="Your Name" required>
+     <input type="email" name="email" placeholder="Email Address" required>
+     <br>
+     <br>
+     <input type="text" name = "subject" placeholder="Subject" required>
+     <input type="text" name = "message" placeholder="Your Message" required>
+     <button type="submit">Send</button>
+     
+  </form>
+
+  <div class = "media-icons">
+    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+
+</body>
+</html>
