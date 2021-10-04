@@ -261,6 +261,20 @@ section {
 
 
 @media (max-width: 1040px){
+  .home .content h1{
+    font-size: 1.8em;
+    font-weight:1100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .home .content p{
+    margin-bottom: 65px;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
 
   .news-container {
     display: none;
@@ -353,4 +367,7 @@ section {
 }
 #white {
   color: #FFFFFF;
+}
+#orange {
+  color: #ff270f;
 }
