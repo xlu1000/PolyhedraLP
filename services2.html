@@ -5,7 +5,7 @@
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
   <title> Polyhedra Fab Lab </title>
   <link rel="icon" href="icon.png">
-  <link rel = "stylesheet" href = "styleServices.css">
+  <link rel = "stylesheet" href = "styleServices2.css">
   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
@@ -24,39 +24,40 @@
     </div>
   </header>
 
-<section class="home">
+<section>
+  <div class = "content">
+    <h2> IDEA DEFINITION.</h2>
+    <p>Our market experts help shape your product idea, analyze the market and define all requirements to start design & development.</p>
 
-
-
-
-
-
-  <div class = "content active">
-    <h1>Services.</h1>
-    <p><span style = "font-weight:bolder" >IDEA DEFINITION</span> – Our market experts help shape your product idea, analyze the market and define all requirements to start design & development.
-      <br><br>
-<span style = "font-weight:bolder" >INDUSTRIAL DESIGN</span> – Our designers create notes, sketches and industrial design of your physical product, app, web and/or cloud based on your idea and requirements.
-<br><br>
-<span style = "font-weight:bolder" >HW AND SW DEVELOPMENT </span>– Our engineers develop the hardware and software components – mechanics, electronics, firmware, app, web, cloud, etc.
-<br><br>
-<span style = "font-weight:bolder" >RAPID PROTOTYPING </span>– Our makers prototype working samples or design mockups of your product using digital fabrication tools at our facilities.
-<br><br>
-<span style = "font-weight:bolder" >MARKET VALIDATION </span>– Our campaign experts prepare, execute and follow up your crowdfunding campaign on Kickstarter or Indiegogo.
-<br><br>
-<span style = "font-weight:bolder" >MASS PRODUCTION</span> – Our project managers prepare and execute your manufacturing including tooling, testing, certification and quality control.</p>
-  </div>
-
-  <div class = "media-icons">
-    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
-    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
-    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
-    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
-
-  </div>
-
+</div>
 </section>
 
 
+<section>
+  
+  <div class = "content">
+    <h2> INDUSTRIAL DESIGN</h2>
+    <p>Our designers create notes, sketches and industrial design of your physical product, app, web and/or cloud based on your idea and requirements.</p>
+  </div>
+</section>
+<section>
+  <div class = "content">
+    <h2> HW AND SW DEVELOPMENT</h2>
+    <p>Our engineers develop the hardware and software components – mechanics, electronics, firmware, app, web, cloud, etc.</p>
+  </div>
+</section>
+<section>
+  <div class = "content">
+    <h2> RAPID PROTOTYPING</h2>
+    <p>Our makers prototype working samples or design mockups of your product using digital fabrication tools at our facilities.</p>
+  </div>
+</section>
+<section>
+  <div class = "content">
+    <h2> MARKET VALIDATION</h2>
+    <p>Our campaign experts prepare, execute and follow up your crowdfunding campaign on Kickstarter or Indiegogo.</p>
+  </div>
+</section>
 
 
 
@@ -103,6 +104,11 @@ btns.forEach((btn, i) => {
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
-
+<script src="scroll-out.js"></script>
+<script type="text/javascript">
+  ScrollOut({
+    targets: 'h2, p'
+  })
+  </script>
 </body>
 </html>
