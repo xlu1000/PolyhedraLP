@@ -14,6 +14,10 @@
   justify-content: center;
   align-items: center;
 }
+#down {
+  margin-left:200px;
+
+}
 h1 {
   display: flex;
   flex-direction: column;
@@ -69,7 +73,7 @@ header .navigation .navigation-items a:hover:before{
 
 
 section {
-  padding: 100px 200px;
+  padding: 40px 200px;
 }
 
 .home {

@@ -6,7 +6,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+#first {
+  width: 100px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 400px;
+  transition: 4s;
 
+
+}
 header{
   z-index: 999;
   position: absolute;
